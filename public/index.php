@@ -1,3 +1,10 @@
+<?php
+
+session_start();
+
+?>
+
+
 <!DOCTYPE html>
 <html>
     
@@ -10,6 +17,16 @@
     
     <body class="home">
         
+        
+    <button id="play">Play</button>
+    <button id="show_lijst"> Show lijst</button>    
+        
+    <!-- todo: Add rank --> 
+        
+        <center>
+    <p><?php echo "Welkom ".$_SESSION['naam'];    ?></p>
+        </center>
+       
         
         
     </body>
