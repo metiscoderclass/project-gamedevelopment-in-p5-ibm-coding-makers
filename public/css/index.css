@@ -3,7 +3,7 @@ body, html {
 }
 
 .home { 
-    background-image: url("/public/a.jpg");
+    background-image: url("/public/css/a.jpg");
 
     height: 100%; 
     
