@@ -1,6 +1,7 @@
 body, html {
     height: 100%;
 }
+html, body{overflow:hidden;}
 
 .home { 
     background-image: url("/public/css/a.jpg");
@@ -11,4 +12,45 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+
+#welkom {
+    font-family: fantasy;
+}
+
+
+.kies {
+    display: inline-block;
+    vertical-align: middle;
+    float: right;
+    margin-top: 500px;
+}
+
+
+.btn {
+  background: #34d947;
+  background-image: -webkit-linear-gradient(top, #34d947, #2bb86d);
+  background-image: -moz-linear-gradient(top, #34d947, #2bb86d);
+  background-image: -ms-linear-gradient(top, #34d947, #2bb86d);
+  background-image: -o-linear-gradient(top, #34d947, #2bb86d);
+  background-image: linear-gradient(to bottom, #34d947, #2bb86d);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Georgia;
+  color: #d5fa00;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
 }

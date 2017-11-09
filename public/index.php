@@ -18,16 +18,28 @@ session_start();
     <body class="home">
         
         
-    <button id="play">Play</button>
-    <button id="show_lijst"> Show lijst</button>    
+
         
-    <!-- todo: Add rank --> 
+    
         
         <center>
-    <p><?php echo "Welkom ".$_SESSION['naam'];    ?></p>
+    <h3 id="welkom"><?php echo "Welkom ".$_SESSION['naam'];    ?></h3>
+    
         </center>
        
+       
+       
+    <div class="kies">
         
+    <button class="btn" onclick="window.open('game/')">Play</button><br>
+    <button class="btn"> Show lijst</button>    
+    
+        
+    </div>    
+ 
+    
+    
+    
         
     </body>
     
