@@ -32,15 +32,13 @@ session_start();
     <div class="kies">
         
     <button class="btn" onclick="window.open('game/')">Play</button><br>
-    <button class="btn"> Show lijst</button>    
-    
+    <button class="btn"> Show lijst</button><br>   
+    <button class="btn">challange mode</button>
         
     </div>    
  
     
     
-    
-        
     </body>
     
 
