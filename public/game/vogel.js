@@ -1,7 +1,23 @@
 function vogel_flappy () {
+    
+    
+
+    
+    this.locationx = 30;
+    this.locationy = width / 2;
+    
+    
+    
+    
     this.show = function(){
-        console.log("test");
+        ellipse(this.locationx,this.locationy,30,30);
+        
+        
+        
     }
 
 
 }
+
+
+

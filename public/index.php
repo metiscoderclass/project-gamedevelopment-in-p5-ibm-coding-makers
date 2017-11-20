@@ -32,8 +32,8 @@ session_start();
     <div class="kies">
         
     <button class="btn" onclick="window.open('game/')">Play</button><br>
-    <button class="btn"> Show lijst</button><br>   
-    <button class="btn">challange mode</button>
+    <button class="btn" onclick="window.open('/public/game/leaderbord')"> Leaderbord</button><br>   
+    <button class="btn" onclick="window.open('/public/game/challenge')">challange mode</button>
         
     </div>    
  
