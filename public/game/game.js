@@ -14,10 +14,12 @@ function draw()
 {
     background(background_flappy)
     vogel.show();
-    
-     if (vogel.locationy >= height) {
-            console.log("wat het werkt");
-        } 
+    vogel.gravity(40,30,20,20,10);
+
+    if (vogel.locationy <= 0) {
+        vogel.locationy += 10;
+    }
+
         
     
     
@@ -30,7 +32,13 @@ function draw()
                 vogel.locationy -= 10;
             }
         }
+        
+
     
     
+    
+    
+
+
 
 

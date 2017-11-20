@@ -13,6 +13,11 @@ function vogel_flappy () {
         ellipse(this.locationx,this.locationy,30,30);
         
         
+
+    }
+    
+    
+    
         
     }
 
