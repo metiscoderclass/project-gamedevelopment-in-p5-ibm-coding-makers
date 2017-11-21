@@ -1,3 +1,12 @@
 body {
     background-image: url(flappybirdachtergrond.png);
 }
+.leader{
+    text-align: center;
+    background-color:red;
+    border-radius: 25px;
+    
+}
+h1{
+    text-align: center;
+}

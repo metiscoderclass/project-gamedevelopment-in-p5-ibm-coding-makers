@@ -1,28 +1,23 @@
-function vogel_flappy () {
-    
-    
+function vogel() {
+    this.x = 50;
+    this.y = height / 2;
+ 
+ 
+ 
 
+    this.verschijn = function()
+    {
+        fill(255,0,100);
+        ellipse(this.x,this.y,40,40);
+    }
     
-    this.locationx = 30;
-    this.locationy = width / 2;
     
-    
-    
-    
-    this.show = function(){
-        ellipse(this.locationx,this.locationy,30,30);
+    this.update = function ()
+    {
         
-        
-
     }
     
     
     
-        
-    }
-
-
 }
-
-
 

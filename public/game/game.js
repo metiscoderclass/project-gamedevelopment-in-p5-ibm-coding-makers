@@ -1,8 +1,9 @@
 var background_flappy;
+var vogel;
 
 function setup() {
     createCanvas(600,800);
-    vogel = new vogel_flappy();
+    vogel = new vogel();
     background_flappy = loadImage("/public/game/benodigtheden/backgroundflappy.png");
 
     
@@ -12,26 +13,14 @@ function setup() {
 
 function draw()
 {
-    background(background_flappy)
-    vogel.show();
-    vogel.gravity(40,30,20,20,10);
-
-    if (vogel.locationy <= 0) {
-        vogel.locationy += 10;
-    }
-
-        
-    
+    background(background_flappy);
+    vogel.update();
+    vogel.verschijn();
     
 
-    
 }
 
-  function keyPressed() {
-            if (key === " ") {
-                vogel.locationy -= 10;
-            }
-        }
+
         
 
     
