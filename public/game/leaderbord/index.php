@@ -8,6 +8,10 @@
         <div class="leader">
             <p>naam en score</p>
         </div>
-        
+        <nav>
+            <ul>
+                <li><a href="/public/index.php">home</a></li>
+            </ul>
+        </nav>
     </body>
 </html>
