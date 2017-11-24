@@ -1,38 +1,36 @@
-var background_flappy;
-var vogel;
-
-function setup() {
-    createCanvas(400,600);
-    vogel = new vogel();
-    background_flappy = loadImage("/public/game/benodigtheden/backgroundflappy.png");
-
+function bird(){
+    this.y = height/2;
+    this.x = 64;
     
+    this.gravity = 1.3;
+    this.lift = -29;
+    this.velocity = 0;
     
-}
-
-
-function draw()
-{
-    background(background_flappy);
-    vogel.update();
-    vogel.verschijn();
-    
-
-}
-
-
-
-function keyPressed() {
-    if (key == ' ') {
-        console.log("spring");
-        
+    this.show = function(){
+        fill(255);
+        ellipse(this.x, this.y, 32, 32);
     }
-     
+    
+    this.up = function(){
+        this.velocity += this.lift;
+    }
+    
+    this.update = function(){
+        this.velocity += this.gravity;
+        this.velocity *= 0.9;
+        this.y += this.velocity;
+        
+        if (this.y > height){
+            this.y = height;
+            this.velocity = 0;
+        }
+    
+    }
 }
 
         
 
-    
+
     
     
     

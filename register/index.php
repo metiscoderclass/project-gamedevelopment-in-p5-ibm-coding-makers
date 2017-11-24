@@ -28,7 +28,7 @@
             <input type="password" placeholder="Password" class="form__input" />
         </div>
         
-        <button class="btn" type="button" onclick="register()">Register</button>
+        <button class="btn" type="button">Register</button>
     </form>
 </div>
   </body>
