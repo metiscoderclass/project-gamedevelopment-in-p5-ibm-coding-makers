@@ -1,3 +1,28 @@
+<?php
+
+
+$host = "localhost";
+$user = "ayachi2003"; 
+$pass = "";     
+$db = "login";
+$port = 3306;
+
+$connection = mysqli_connect($host, $user, $pass, $db, $port);
+
+
+$naam = $_POST["naam"];
+$wachtwoord = $_POST["wachtwoord"];
+$cwachtwoord = $_POST["cwachtwoord"];
+
+
+$query = "INSERT INTO ";
+
+
+
+?>
+
+
+
 <!DOCTYPE html>	
 <html>
   <head>
@@ -15,20 +40,20 @@
         <h1 class="user__title">Registreren</h1>
     </header>
     
-    <form class="form">
+    <form class="form" method="post">
         <div class="form__group">
-            <input type="text" placeholder="Username" class="form__input" />
+            <input type="text" placeholder="Username" class="form__input" name="naam" />
         </div>
         
         <div class="form__group">
-            <input type="email" placeholder="Email" class="form__input" />
+            <input type="password" placeholder="wachtwoord" class="form__input" name="wachtwoord" />
         </div>
         
         <div class="form__group">
-            <input type="password" placeholder="Password" class="form__input" />
+            <input type="password" placeholder="confirm wachtwoord" class="form__input" name="cwachtwoord" />
         </div>
         
-        <button class="btn" type="button">Register</button>
+        <input type="text" class="btn" name="button"/>
     </form>
 </div>
   </body>
