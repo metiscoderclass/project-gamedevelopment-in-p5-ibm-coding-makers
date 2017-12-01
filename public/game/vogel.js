@@ -28,6 +28,10 @@ function draw(){
     pipe.show();
     pipe.update();
     
+    //if ((!game.y > pipe. )) {
+      //  
+    //}
+    
     
 
     

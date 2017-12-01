@@ -7,46 +7,47 @@ function pipe() {
     this.pijpy2 = 305;
     
     
-    this.pijp2x1 = 300;
-    this.pijp2y1 = 0;
-    
-    this.pijp1x1 = 400;
-    this.pijp1y1 - 305;
     
     
    
    
     this.show = function() {
         fill(0,255,0)
-        rect(this.pijpx1,this.pijpy1,20,200)
-        this.pijpx1 -= 1;
+        rect(this.pijpx1,this.pijpy1,20,this.w1);
+        this.pijpx1 -= 3;
         fill(0,255,0)
-        rect(this.pijpx2,this.pijpy2,20,height)
-        this.pijpx2 -= 1;
+        rect(this.pijpx2,this.pijpy2,20,400)
+        this.pijpx2 -= 3;
         
         
         
         
     }
     
-    this.show2 = function()
-    {
-        fill(0,255,0)
-        rect(this.pijpx1,this.pijpy1,20,200)
-        this.pijpx1 -= 1;
-        fill(0,255,0)
-        rect(this.pijpx2,this.pijpy2,20,height)
-        this.pijpx2 -= 1;
-    }
     
     this.update = function()
     {
         if (this.pijpx1 <= 0) {
+            this.pijpx1 = 400;
+            this.pijpy1 = 0;
+                
+                
+            this.pijpx2 = 400;
+            this.pijpy2 = 300;
             console.log("nieuwe pipe")
-            this.show();
-            this.show2();
             
-        } 
+            this.w1 = random(200);
+           
+
+            if (this.w1 <= 0 || this.w1 <= 100) {
+                this.w1 += 100;
+            }
+            
+            
+            
+            this.show();
+            
+        }
     }
     
     
