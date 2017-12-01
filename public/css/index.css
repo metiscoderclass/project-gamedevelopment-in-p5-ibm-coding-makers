@@ -4,7 +4,7 @@ body, html {
 html, body{overflow:hidden;}
 
 .home { 
-    background-image: url("flappybackground.gif");
+    background-image: url("FlappyBirds.gif");
 
     height: 100%; 
     

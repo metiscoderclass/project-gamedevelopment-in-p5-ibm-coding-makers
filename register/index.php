@@ -15,8 +15,12 @@ $wachtwoord = $_POST["wachtwoord"];
 $cwachtwoord = $_POST["cwachtwoord"];
 
 
-$query = "INSERT INTO ";
+$query = "INSERT INTO users(username,wachtwoord) VALUES ('$naam','$wachtwoord') ";
 
+$resultaat = mysqli_query($connection,$query);
+
+
+mysqli_close($connection);
 
 
 ?>
@@ -53,7 +57,7 @@ $query = "INSERT INTO ";
             <input type="password" placeholder="confirm wachtwoord" class="form__input" name="cwachtwoord" />
         </div>
         
-        <input type="text" class="btn" name="button"/>
+        <input type="submit" class="btn" name="button"/>
     </form>
 </div>
   </body>

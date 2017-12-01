@@ -5,6 +5,7 @@
     <script type="text/javascript" src=""></script>
     <script src="game.js"></script>
     <script type="text/javascript" src="vogel.js"></script>
+    <script type="text/javascript" src="pipe.js"></script>
   </head>
   <body>
   </body>

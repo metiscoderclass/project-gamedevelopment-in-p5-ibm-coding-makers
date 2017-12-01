@@ -1,5 +1,12 @@
 body {
     background-image: url(flappybirdachtergrond.png);
+    
+    height: 100%; 
+    
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .leader{
     text-align: center;

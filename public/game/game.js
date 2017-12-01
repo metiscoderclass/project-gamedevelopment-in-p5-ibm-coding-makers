@@ -28,6 +28,12 @@ function bird(){
     }
 }
 
+
+
+function pipe()
+{
+    console.log("Test");
+}
         
 
 

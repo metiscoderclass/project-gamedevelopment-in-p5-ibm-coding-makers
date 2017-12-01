@@ -21,17 +21,19 @@ $port = 3306;
 
 $connection = mysqli_connect($host, $user, $pass, $db, $port);
 
-$query = "select * from users where username = '$naam' and wachtwoord = '$wachtwoord' ";
+
+$query = "select * from users  username = '$naam' and wachtwoord = '$wachtwoord' ";
 
 $result = mysqli_query($connection,$query);
 
 
 $row = mysqli_fetch_array($result);
 
-$naam = stripcslashes($naam);
-$wachtwoord = stripcslashes($wachtwoord);
-$naam = mysqli_real_escape_string($connection,$naam);
-$wachtwoord = mysqli_real_escape_string($connection,$wachtwoord);
+
+//$naam = stripcslashes($naam);
+//$wachtwoord = stripcslashes($wachtwoord);
+//$naam = mysqli_real_escape_string($connection,$naam);
+//$wachtwoord = mysqli_real_escape_string($connection,$wachtwoord);
 
 
 

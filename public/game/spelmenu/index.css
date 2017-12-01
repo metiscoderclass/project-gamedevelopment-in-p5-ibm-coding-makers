@@ -1,0 +1,18 @@
+body{
+    background-color:black;
+}
+div{
+    background-image: url("flappy game over.jpg");
+    border-radius: 25px;
+}
+ul{
+  padding: 0px;
+  border: solid 2px black;
+  background-color: red;
+  border-radius: 20px 20px 20px 20px;
+  position: fixed;
+  top: 100px;
+}
+ul li{
+  padding:10px;
+}
