@@ -22,17 +22,16 @@ function draw(){
     background(img);
     if (begin == true) {
     bird.update();
+    pipe.show();
+    pipe.update();
     }
     bird.show();
     
-    pipe.show();
-    pipe.update();
-    
-    //if ((!game.y > pipe. )) {
-      //  
-    //}
     
     
+  
+    
+ 
 
     
     

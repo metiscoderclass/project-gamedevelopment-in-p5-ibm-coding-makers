@@ -6,11 +6,12 @@ function pipe() {
     this.pijpx2 = 400;
     this.pijpy2 = 305;
     
+    this.score = document.getElementById("score");
+    
+    this.count = 0;
     
     
     
-   
-   
     this.show = function() {
         fill(0,255,0)
         rect(this.pijpx1,this.pijpy1,20,this.w1);
@@ -44,6 +45,12 @@ function pipe() {
             }
             
             
+            
+            
+            if (bird.y > this.w1) {
+                this.count += 1;
+                score.innerHTML = "score " + this.count;
+            }
             
             this.show();
             

@@ -4,6 +4,7 @@ body{
 div{
     background-image: url("flappy game over.jpg");
     border-radius: 25px;
+    text-align: center;
 }
 ul{
   padding: 0px;

@@ -8,5 +8,8 @@
     <script type="text/javascript" src="pipe.js"></script>
   </head>
   <body>
+    
+    <p id="score">0</p>
+    
   </body>
 </html>

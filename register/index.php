@@ -57,7 +57,7 @@ mysqli_close($connection);
             <input type="password" placeholder="confirm wachtwoord" class="form__input" name="cwachtwoord" />
         </div>
         
-        <input type="submit" class="btn" name="button"/>
+        <input onclick="window.open('https://flappy-bird-ayachi2003.c9users.io')" type="submit" class="btn" name="button"/>
     </form>
 </div>
   </body>

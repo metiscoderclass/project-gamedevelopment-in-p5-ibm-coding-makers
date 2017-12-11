@@ -27,9 +27,6 @@ $query = "select * from users  username = '$naam' and wachtwoord = '$wachtwoord'
 $result = mysqli_query($connection,$query);
 
 
-$row = mysqli_fetch_array($result);
-
-
 //$naam = stripcslashes($naam);
 //$wachtwoord = stripcslashes($wachtwoord);
 //$naam = mysqli_real_escape_string($connection,$naam);
@@ -65,7 +62,7 @@ mysqli_close($connection);
         <form class="login-form" method="post">
           <input type="text" placeholder="gebruiksnaam" name="naam"/>
           <input type="password" placeholder="wachtwoord" name="wachtwoord"/>
-          <input type="submit" name="knop"/>
+          <input onclick="window.open('/public/index.php')" type="submit" name="knop"/>
           <p class="message">Niet geregisteerd? <a href="/register/index.php">Create an account</a></p>
         </form>
       </div>
